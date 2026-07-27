@@ -1,35 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+}
+
 .container {
     display: grid;
-    grid-template-areas: 
-    "header header header"
-    "sidebar sidebar sidebar"
-    "content content content"
-    "footer footer footer";
-    gap: 10px;
-    border: 1px solid black;
-   
+    grid-template-areas:
+        "header"
+        "title"
+        "cards"
+        "footer";
+    gap: 60px;
 }
 
 .header {
     grid-area: header;
-    background-color: lightblue;
+    display: grid;
+    grid-template-areas: "text photo";
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background: #081130;
+    padding: 80px;
+}
+
+.text {
+    grid-area: text;
+}
+
+.photo {
+    grid-area: photo;
     text-align: center;
+}
+
+.photo img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.tag {
+    display: inline-block;
+    background: #f2f6fa;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.text h1 {
+    color: white;
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.text p {
+    color: #c7d0d9;
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.text button {
+    background: #ffd24b;
+    border: none;
+    padding: 18px 35px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.title {
+    grid-area: title;
+    text-align: center;
+}
+
+.title h2 {
+    font-size: 40px;
+    color: #2e363e;
+}
+
+.cards {
+    grid-area: cards;
+    display: grid;
+    grid-template-areas:
+        "card1 card2 card3"
+        "card4 card5 card6"
+        "card7 card8 card9";
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 1200px;
+    margin: auto;
+}
+
+.card:nth-child(1) {
+    grid-area: card1;
+}
+
+.card:nth-child(2) {
+    grid-area: card2;
+}
+
+.card:nth-child(3) {
+    grid-area: card3;
+}
+
+.card:nth-child(4) {
+    grid-area: card4;
+}
+
+.card:nth-child(5) {
+    grid-area: card5;
+}
+
+.card:nth-child(6) {
+    grid-area: card6;
+}
+
+.card:nth-child(7) {
+    grid-area: card7;
+}
+
+.card:nth-child(8) {
+    grid-area: card8;
+}
+
+.card:nth-child(9) {
+    grid-area: card9;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-body {
     padding: 20px;
 }
 
-.sidebar {
-    grid-area: sidebar;
-    background-color: lightcoral;
-    padding: 20px;
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
 }
-.content {
-    grid-area: content;
-    background-color: lightgreen;
-    padding: 20px;
+
+.card p {
+    color: #777;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.card span {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card button {
+    background: #ffd24b;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 .footer {
     grid-area: footer;
-    background-color: lightgray;
-    padding: 20px;
+    background: #081130;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+@media (max-width: 992px) {
+    .header {
+        grid-template-areas:
+            "text"
+            "photo";
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .cards {
+        width: 90%;
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8"
+            "card9 .";
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .cards {
+        grid-template-areas:
+            "card1"
+            "card2"
+            "card3"
+            "card4"
+            "card5"
+            "card6"
+            "card7"
+            "card8"
+            "card9";
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        padding: 40px;
+    }
+
+    .text h1 {
+        font-size: 32px;
+    }
+
+    .title h2 {
+        font-size: 28px;
+    }
 }
