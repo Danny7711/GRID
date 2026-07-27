@@ -11,7 +11,12 @@ body{
 }
 
 /* ---------- HERO ---------- */
-
+.header{
+    background-image: url("cupcake.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .hero{
     background:#081130;
     min-height:100vh;
