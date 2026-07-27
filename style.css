@@ -140,37 +140,3 @@ body{
     cursor:pointer;
 }
 
-/* ---------- ADAPTIVE ---------- */
-
-@media(max-width:992px){
-
-.hero{
-    grid-template-columns:1fr;
-    text-align:center;
-}
-
-.hero-buttons{
-    grid-template-columns:1fr;
-}
-
-.cards{
-    grid-template-columns:repeat(2,1fr);
-}
-
-}
-
-@media(max-width:650px){
-
-.cards{
-    grid-template-columns:1fr;
-}
-
-.hero h1{
-    font-size:34px;
-}
-
-.catalog h2{
-    font-size:28px;
-}
-
-}
