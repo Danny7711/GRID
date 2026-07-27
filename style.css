@@ -23,19 +23,21 @@ body {
 
 .header {
     column-gap:100px;
-    min-height: 850px;
+   min-height:900px;
     grid-area: header;
     display: grid;
     grid-template-areas: "text photo";
-    grid-template-columns: 1fr 1fr;
     align-items: center;
     background: #081130;
     padding: 80px;
+    grid-template-columns:45% 55%;
+    column-gap:120px;
 }
 
 .text {
     grid-area: text;
     max-width: 520px;
+    width:520px;
 }
 
 .photo {
@@ -46,9 +48,9 @@ body {
     text-align: center;
 }
 
-.photo img {
-    width: 100%;
-    max-width: 750px;
+.photo img{
+    width:850px;
+    margin-right:-120px;
 }
 
 .tag {
@@ -193,7 +195,7 @@ line-height:1.2;
 
 
 
-
+@media (max-width: 992px) {
     .header {
         grid-template-areas:
             "text"
@@ -212,9 +214,9 @@ line-height:1.2;
             "card9 .";
         grid-template-columns: repeat(2, 1fr);
     }
+}
 
-
-
+@media (max-width: 600px) {
     .cards {
         grid-template-areas:
             "card1"
@@ -240,3 +242,4 @@ line-height:1.2;
     .title h2 {
         font-size: 28px;
     }
+}
