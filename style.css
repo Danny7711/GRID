@@ -3,7 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+.top{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    align-items:center;
 
+    color:white;
+
+    height:90px;
+
+    padding:0 100px;
+
+    background-image:url(cupcake.jpg);
+    background-size:cover;
+    background-position:center;
+}
+
+    border-bottom:1px solid rgba(255,255,255,.1);
+}
 body {
     font-family: Arial, sans-serif;
     background: #ffffff;
@@ -11,6 +28,8 @@ body {
 
 .container {
     display: grid;
+    max-width: 1920px;
+    margin: 0 auto;
     grid-template-areas:
         "header"
         "title"
@@ -20,6 +39,8 @@ body {
 }
 
 .header {
+    column-gap:100px;
+    min-height: 850px;
     grid-area: header;
     display: grid;
     grid-template-areas: "text photo";
@@ -31,16 +52,20 @@ body {
 
 .text {
     grid-area: text;
+    max-width: 520px;
 }
 
 .photo {
+     display:flex;
+    justify-content:center;
+    align-items:flex-end;
     grid-area: photo;
     text-align: center;
 }
 
 .photo img {
     width: 100%;
-    max-width: 500px;
+    max-width: 750px;
 }
 
 .tag {
@@ -54,7 +79,9 @@ body {
 
 .text h1 {
     color: white;
-    font-size: 48px;
+    font-size:56px;
+font-weight:700;
+line-height:1.2;
     line-height: 1.2;
     margin-bottom: 20px;
 }
@@ -74,6 +101,9 @@ body {
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
+     width:280px;
+    height:70px;
+    font-size:18px;
 }
 
 .title {
