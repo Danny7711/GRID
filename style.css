@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
     background: #ffffff;
     color: #2e363e;
 }
@@ -29,18 +29,9 @@ body {
 
     overflow: hidden;
 
-    color: white;
+    color: #ffffff;
 }
-.hero h1 {
-    color: white;
 
-    font-family: "Montserrat", sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 1.15;
-
-    margin-bottom: 20px;
-}
 
 /* =========================
    TOP INFO
@@ -57,14 +48,14 @@ body {
     align-items: flex-start;
     justify-content: space-between;
 
-    z-index: 5;
+    z-index: 10;
 }
 
 .logo {
-    color: white;
+    color: #ffffff;
 
     font-size: 14px;
-    font-weight: normal;
+    font-weight: 400;
 }
 
 .contacts {
@@ -79,20 +70,25 @@ body {
     display: flex;
     align-items: flex-start;
 
-    gap: 8px;
+    gap: 10px;
 }
 
-.address span,
-.phone span {
-    font-size: 14px;
+.address img,
+.phone img {
+    width: 20px;
+    height: 20px;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
 }
 
 .address p,
 .phone strong {
-    color: white;
+    color: #ffffff;
 
     font-size: 10px;
-    font-weight: normal;
+    font-weight: 400;
 
     line-height: 1.4;
 }
@@ -105,12 +101,12 @@ body {
 
     font-size: 8px;
 
-    margin-top: 2px;
+    margin-top: 3px;
 }
 
 
 /* =========================
-   TEXT
+   HERO TEXT
 ========================= */
 
 .hero-text {
@@ -118,9 +114,10 @@ body {
 
     z-index: 4;
 
-    width: 50%;
+    width: 55%;
 
-    padding-top: 170px;
+    padding-top: 190px;
+
     margin-left: 10%;
 }
 
@@ -137,17 +134,20 @@ body {
     text-transform: uppercase;
 
     font-size: 9px;
+    font-weight: 500;
 
     margin-bottom: 20px;
 }
 
 .hero h1 {
-    color: white;
+    color: #ffffff;
 
-    font-size: 38px;
-    line-height: 1.15;
+    font-family: "Montserrat", Arial, sans-serif;
 
+    font-size: 48px;
     font-weight: 700;
+
+    line-height: 1.15;
 
     margin-bottom: 20px;
 }
@@ -187,10 +187,11 @@ body {
     cursor: pointer;
 
     font-size: 12px;
+    font-weight: 600;
 }
 
 .hero-buttons span {
-    color: white;
+    color: #ffffff;
 
     font-size: 10px;
 
@@ -210,7 +211,7 @@ body {
     text-align: center;
 
     font-size: 30px;
-    font-weight: normal;
+    font-weight: 600;
 
     margin-bottom: 50px;
 }
@@ -229,7 +230,7 @@ body {
 }
 
 .card {
-    background: white;
+    background: #ffffff;
 
     border-radius: 10px;
 
@@ -260,7 +261,7 @@ body {
 }
 
 .card p {
-    color: #666;
+    color: #666666;
 
     line-height: 1.5;
 }
@@ -268,7 +269,7 @@ body {
 .card span {
     font-size: 22px;
 
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .card button {
@@ -316,7 +317,7 @@ body {
     }
 
     .hero h1 {
-        font-size: 34px;
+        font-size: 38px;
     }
 
     .cards {
@@ -345,14 +346,14 @@ body {
     .hero-text {
         width: auto;
 
+        padding-top: 160px;
+
         margin-left: 20px;
         margin-right: 20px;
-
-        padding-top: 160px;
     }
 
     .hero h1 {
-        font-size: 28px;
+        font-size: 30px;
     }
 
     .description {
