@@ -6,41 +6,31 @@
 
 body {
     font-family: "Montserrat", Arial, sans-serif;
-    background: #ffffff;
+    background: #fff;
     color: #2e363e;
 }
 
 
-/* =========================
-   HERO
-========================= */
+/* HERO */
 
 .hero {
     position: relative;
-
     width: 100%;
-    min-height: 710px;
+    height: 100vh;
+    min-height: 700px;
 
-    background-color: #081130;
-    background-image: url("cupcake.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background: #081130 url("cupcake.png") center center / 100% 100% no-repeat;
 
     overflow: hidden;
-
-    color: #ffffff;
+    color: #fff;
 }
 
 
-/* =========================
-   TOP INFO
-========================= */
+/* TOP INFO */
 
 .top-info {
     position: absolute;
-
-    top: 28px;
+    top: 30px;
     left: 10%;
     right: 10%;
 
@@ -52,24 +42,19 @@ body {
 }
 
 .logo {
-    color: #ffffff;
-
+    color: #fff;
     font-size: 14px;
-    font-weight: 400;
 }
 
 .contacts {
     display: flex;
-    align-items: flex-start;
-
-    gap: 40px;
+    gap: 35px;
 }
 
 .address,
 .phone {
     display: flex;
     align-items: flex-start;
-
     gap: 10px;
 }
 
@@ -77,47 +62,35 @@ body {
 .phone img {
     width: 20px;
     height: 20px;
-
     object-fit: contain;
-
     flex-shrink: 0;
 }
 
 .address p,
 .phone strong {
-    color: #ffffff;
-
+    color: #fff;
     font-size: 10px;
     font-weight: 400;
-
     line-height: 1.4;
 }
 
 .address small,
 .phone small {
     display: block;
-
     color: #c8d1da;
-
     font-size: 8px;
-
     margin-top: 3px;
 }
 
 
-/* =========================
-   HERO TEXT
-========================= */
+/* HERO TEXT */
 
 .hero-text {
     position: relative;
-
     z-index: 4;
 
     width: 55%;
-
-    padding-top: 190px;
-
+    padding-top: 165px;
     margin-left: 10%;
 }
 
@@ -128,11 +101,9 @@ body {
     color: #4b555f;
 
     padding: 7px 15px;
-
     border-radius: 4px;
 
     text-transform: uppercase;
-
     font-size: 9px;
     font-weight: 500;
 
@@ -140,14 +111,11 @@ body {
 }
 
 .hero h1 {
-    color: #ffffff;
+    color: #fff;
 
-    font-family: "Montserrat", Arial, sans-serif;
-
-    font-size: 48px;
+    font-size: 38px;
     font-weight: 700;
-
-    line-height: 1.15;
+    line-height: 1.18;
 
     margin-bottom: 20px;
 }
@@ -162,15 +130,11 @@ body {
 }
 
 
-/* =========================
-   BUTTON
-========================= */
+/* BUTTON */
 
 .hero-buttons {
     display: flex;
-
     align-items: center;
-
     gap: 15px;
 }
 
@@ -186,22 +150,19 @@ body {
 
     cursor: pointer;
 
-    font-size: 12px;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 11px;
     font-weight: 600;
 }
 
 .hero-buttons span {
-    color: #ffffff;
-
+    color: #fff;
     font-size: 10px;
-
     line-height: 1.4;
 }
 
 
-/* =========================
-   CATALOG
-========================= */
+/* CATALOG */
 
 .catalog {
     padding: 60px 10%;
@@ -217,23 +178,18 @@ body {
 }
 
 
-/* =========================
-   CARDS
-========================= */
+/* CARDS */
 
 .cards {
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 30px;
 }
 
 .card {
-    background: #ffffff;
+    background: #fff;
 
     border-radius: 10px;
-
     overflow: hidden;
 
     box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
@@ -244,7 +200,6 @@ body {
     height: 230px;
 
     object-fit: cover;
-
     display: block;
 }
 
@@ -252,7 +207,6 @@ body {
     padding: 20px;
 
     display: grid;
-
     row-gap: 15px;
 }
 
@@ -261,14 +215,12 @@ body {
 }
 
 .card p {
-    color: #666666;
-
+    color: #666;
     line-height: 1.5;
 }
 
 .card span {
     font-size: 22px;
-
     font-weight: 700;
 }
 
@@ -278,26 +230,17 @@ body {
     padding: 14px 30px;
 
     border: none;
+    border-radius: 6px;
 
     background: #ffd24b;
-
-    border-radius: 6px;
 
     cursor: pointer;
 }
 
 
-/* =========================
-   TABLET
-========================= */
+/* TABLET */
 
 @media (max-width: 992px) {
-
-    .hero {
-        min-height: 100vh;
-
-        background-position: center center;
-    }
 
     .top-info {
         left: 7%;
@@ -310,14 +253,12 @@ body {
 
     .hero-text {
         width: 80%;
-
-        padding-top: 180px;
-
+        padding-top: 150px;
         margin-left: 7%;
     }
 
     .hero h1 {
-        font-size: 38px;
+        font-size: 34px;
     }
 
     .cards {
@@ -326,17 +267,9 @@ body {
 }
 
 
-/* =========================
-   MOBILE
-========================= */
+/* MOBILE */
 
 @media (max-width: 600px) {
-
-    .hero {
-        min-height: 100vh;
-
-        background-position: center center;
-    }
 
     .top-info {
         left: 20px;
@@ -345,15 +278,12 @@ body {
 
     .hero-text {
         width: auto;
-
-        padding-top: 160px;
-
-        margin-left: 20px;
-        margin-right: 20px;
+        padding-top: 150px;
+        margin: 0 20px;
     }
 
     .hero h1 {
-        font-size: 30px;
+        font-size: 29px;
     }
 
     .description {
