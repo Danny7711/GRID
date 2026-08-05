@@ -19,12 +19,15 @@ body {
     position: relative;
 
     width: 100%;
-    min-height: 710px;
+    height: 100vh;
+    min-height: 700px;
 
     background-color: #081130;
     background-image: url("cupcake.png");
     background-repeat: no-repeat;
-    background-size: cover;
+
+    /* Картинка полностью занимает экран */
+    background-size: 100% 100%;
     background-position: center center;
 
     overflow: hidden;
@@ -40,7 +43,7 @@ body {
 .top-info {
     position: absolute;
 
-    top: 28px;
+    top: 30px;
     left: 10%;
     right: 10%;
 
@@ -62,7 +65,7 @@ body {
     display: flex;
     align-items: flex-start;
 
-    gap: 40px;
+    gap: 35px;
 }
 
 .address,
@@ -88,7 +91,7 @@ body {
     color: #ffffff;
 
     font-size: 10px;
-    font-weight: 400;
+    font-weight: 500;
 
     line-height: 1.4;
 }
@@ -116,7 +119,7 @@ body {
 
     width: 55%;
 
-    padding-top: 190px;
+    padding-top: 165px;
 
     margin-left: 10%;
 }
@@ -144,10 +147,10 @@ body {
 
     font-family: "Montserrat", Arial, sans-serif;
 
-    font-size: 48px;
+    font-size: 38px;
     font-weight: 700;
 
-    line-height: 1.15;
+    line-height: 1.18;
 
     margin-bottom: 20px;
 }
@@ -186,7 +189,9 @@ body {
 
     cursor: pointer;
 
-    font-size: 12px;
+    font-family: "Montserrat", Arial, sans-serif;
+
+    font-size: 11px;
     font-weight: 600;
 }
 
@@ -294,9 +299,10 @@ body {
 @media (max-width: 992px) {
 
     .hero {
-        min-height: 100vh;
+        height: 100vh;
+        min-height: 650px;
 
-        background-position: center center;
+        background-size: 100% 100%;
     }
 
     .top-info {
@@ -304,20 +310,16 @@ body {
         right: 7%;
     }
 
-    .contacts {
-        display: none;
-    }
-
     .hero-text {
         width: 80%;
 
-        padding-top: 180px;
+        padding-top: 150px;
 
         margin-left: 7%;
     }
 
     .hero h1 {
-        font-size: 38px;
+        font-size: 34px;
     }
 
     .cards {
@@ -333,9 +335,10 @@ body {
 @media (max-width: 600px) {
 
     .hero {
-        min-height: 100vh;
+        height: 100vh;
+        min-height: 650px;
 
-        background-position: center center;
+        background-size: 100% 100%;
     }
 
     .top-info {
@@ -343,17 +346,21 @@ body {
         right: 20px;
     }
 
+    .contacts {
+        display: none;
+    }
+
     .hero-text {
         width: auto;
 
-        padding-top: 160px;
+        padding-top: 150px;
 
         margin-left: 20px;
         margin-right: 20px;
     }
 
     .hero h1 {
-        font-size: 30px;
+        font-size: 29px;
     }
 
     .description {
@@ -362,15 +369,12 @@ body {
 
     .hero-buttons {
         flex-direction: column;
+
         align-items: flex-start;
     }
 
     .hero button {
         width: 180px;
-    }
-
-    .cards {
-        grid-template-columns: 1fr;
     }
 
     .catalog {
@@ -379,5 +383,9 @@ body {
 
     .catalog h2 {
         font-size: 26px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
     }
 }
