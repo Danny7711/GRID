@@ -31,7 +31,16 @@ body {
 
     color: white;
 }
+.hero h1 {
+    color: white;
 
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.15;
+
+    margin-bottom: 20px;
+}
 
 /* =========================
    TOP INFO
