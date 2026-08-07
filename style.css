@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+     font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -104,7 +105,7 @@ body {
 
     width: 55%;
 
-    padding-top: 190px;
+    padding-top: 180px;
 
     margin-left: 10%;
 }
@@ -216,7 +217,7 @@ body {
 
     grid-template-columns: repeat(3, 1fr);
 
-    gap: 30px;
+    gap: 24px;
 }
 
 .card {
@@ -240,11 +241,11 @@ body {
 }
 
 .card-body {
-    padding: 20px;
+    padding: 50px 44px;
 
     display: grid;
 
-    row-gap: 15px;
+    row-gap: 20px;
 }
 
 .card h3 {
@@ -258,7 +259,7 @@ body {
 }
 
 .card span {
-    font-size: 22px;
+    font-size: 24px;
 
     font-weight: 700;
 }
@@ -266,7 +267,7 @@ body {
 .card button {
     justify-self: start;
 
-    padding: 14px 30px;
+    padding: 20px 40px;
 
     border: none;
 
@@ -275,7 +276,6 @@ body {
     border-radius: 6px;
 
     cursor: pointer;
+    font-size: 18px;
 }
-
-
 
